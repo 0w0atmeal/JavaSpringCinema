@@ -11,6 +11,8 @@ public class CinemaEvent {
     /*   
         AUFGABE 2
 
+        In der nachfolgenen For-Schleife werden neue Sitze erstellt und zu dem bestehendem, mehrdimensionalen Array hinzugefügt. Mit einem Startwert von 0 und der Abbruchbedingung der Länge dieses Arrays, wird die Variable i mit jedem Durchlauf um 1 erhöht. Im Rumpf steckt eine weitere For-Schleife, ebenfalls mit dem Startwert 0, der Abbruchbedingung der Länge des Arrays mit i und einer Erhöhung um 1 pro Durchlauf. Im Rumpf dieser wird bei jedem Durchgang ein neuer Sitz auf der Position des Arrays "seats", die durch die Werte von i und k vorgegeben ist, erstellt. 
+
 
     */
     public CinemaEvent(int id, Movie movie, CinemaHall cinemahall, String time){

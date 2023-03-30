@@ -13,9 +13,9 @@ import ghb.informatik.models.Movie;
 @Controller
 public class CinemaEventController {
     
-    Movie m1, m2, m3, m4;
+    Movie m1, m2, m3, m4, m5, m6;
     CinemaHall ch1, ch2;
-    CinemaEvent ce1, ce2, ce3, ce4, ce5, ce6, ce7, ce8;
+    CinemaEvent ce1, ce2, ce3, ce4, ce5, ce6, ce7, ce8, ce9, ce10;
 
 
     public CinemaEventController(){
@@ -48,6 +48,8 @@ public class CinemaEventController {
 
     /*
         AUFGABE 3
+
+
     */    
     private void createDemoData(){
         ch1 = new CinemaHall(4, 4, 1);
@@ -77,6 +79,18 @@ public class CinemaEventController {
         m4.setFsk(16);
         m4.setLength(178);
 
+        m5 = new Movie("Platzhalter1");
+        m5.setDesc("Zeitloser Klassiker...");
+        m5.setImgLink("https://assets.cdn.moviepilot.de/files/907722fd26722acf79b0969a472768c7c8efe900c48e0fb0b8e93fb2eb99/limit/500/1000/MV5BNTUxOTdjMDMtMWY1MC00MjkxLTgxYTMtYTM1MjU5ZTJlNTZjXkEyXkFqcGdeQXVyNTA4NzY1MzY%40._V1_SY1000_CR0%2C0%2C706%2C1000_AL_.jpg");
+        m5.setFsk(12);
+        m5.setLength(175);
+
+        m6 = new Movie("Platzhalter2");
+        m6.setDesc("Zeitloser Klassiker...");
+        m6.setImgLink("https://assets.cdn.moviepilot.de/files/907722fd26722acf79b0969a472768c7c8efe900c48e0fb0b8e93fb2eb99/limit/500/1000/MV5BNTUxOTdjMDMtMWY1MC00MjkxLTgxYTMtYTM1MjU5ZTJlNTZjXkEyXkFqcGdeQXVyNTA4NzY1MzY%40._V1_SY1000_CR0%2C0%2C706%2C1000_AL_.jpg");
+        m6.setFsk(0);
+        m6.setLength(172);
+
         
 
         ce1 = new CinemaEvent(0, m1, ch1, "11.10.2022, 19:00 Uhr");
@@ -87,10 +101,13 @@ public class CinemaEventController {
         ce6 = new CinemaEvent(5, m3, ch2, "15.10.2022, 20:30 Uhr");
         ce7 = new CinemaEvent(6, m2, ch1, "16.10.2022, 21:15 Uhr");
         ce8 = new CinemaEvent(7, m1, ch2, "18.10.2022, 20:30 Uhr");
+        ce9 = new CinemaEvent(8, m5, ch1,"18.12.2022, 20:30 Uhr");
+        ce10 = new CinemaEvent(9, m6, ch2,"18.12.2024, 20:31 Uhr");
+        
     }
 
     public CinemaEvent[] getAllCE(){
-        CinemaEvent[] allCinemaEvents = new CinemaEvent[8];
+        CinemaEvent[] allCinemaEvents = new CinemaEvent[10];
         
         allCinemaEvents[0] = getCe1();
         allCinemaEvents[1] = getCe2();
@@ -100,6 +117,8 @@ public class CinemaEventController {
         allCinemaEvents[5] = getCe6();
         allCinemaEvents[6] = getCe7();
         allCinemaEvents[7] = getCe8();
+        allCinemaEvents[8] = getCe9();
+        allCinemaEvents[9] = getCe10();
 
         return allCinemaEvents;
     }
@@ -128,6 +147,12 @@ public class CinemaEventController {
     public CinemaEvent getCe8() {
         return ce8;
     }
+    public CinemaEvent getCe9() {
+        return ce9;
+    }
+    public CinemaEvent getCe10() {
+        return ce10;
+    }
 
     
     public CinemaHall getCh1() {
@@ -148,6 +173,13 @@ public class CinemaEventController {
     public Movie getM4() {
         return m4;
     }
+    public Movie getM5() {
+        return m5;
+    }
+    public Movie getM6() {
+        return m6;
+    }
+
     
 
 

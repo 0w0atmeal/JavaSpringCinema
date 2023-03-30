@@ -16,12 +16,7 @@ public class CinemaApplication {
 
 	AUFGABE 1
 
-	//test
-
-
-
-
-
-
+	Das OOP-Paradigma steht für Objekt-Orientierte-Programmierung. Wir versuchen im unserem Code die reale Welt abzubilden. Für Objekte in der realen Welt erstellen deswegen entsprechend Objekte in Java. Objekte werden durch Klassen erzeugt, die wie ein Bauplan für diese Objekte fungieren. Von einer Klasse können beliebig viele Objekte erzeugt werden, bis das Limit der Java Virtual Machine erreicht ist.
+	
 
  */
