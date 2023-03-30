@@ -60,6 +60,7 @@ public class CinemaEventController {
         m1.setImgLink("https://m.media-amazon.com/images/I/51KCZ507V3L._SY445_.jpg");
         m1.setFsk(12);
         m1.setLength(116);
+        m1.setExternalLink
 
         m2 = new Movie("Andor Movie");
         m2.setDesc("Andor als Film - kommt bestimmt!");

@@ -6,6 +6,7 @@
             <p class="card-text" th:text="${ce.movie.desc}">Keine Beschreibung gefunden...</p>
             <p class="card-text" th:text="${ce.time}">Zeit kommt noch</p>
             <p class="card-text">Kino <span th:text="${ce.cinemahall.getNumber}">??</span> (FSK <span th:text="${ce.movie.getFsk}">??</span>), <span th:text="${ce.movie.length}">??</span> Min.</p>
+            <p class="card-text" th:text="${ce.time}">Zeit kommt noch</p>
             <a th:href="@{/setseat(cinemaevent=${ce.getId})}" class="btn btn-primary">Plätze buchen!</a>
         </div>
     </div>
@@ -13,5 +14,7 @@
 <!--
 
     AUFGABE 5
+
+    Die For-Each-Schleife beginnt ab th:each. Für jedes Element des Arrays "cinemaEvents" wird über die For-Schleife eine Card erstellt. Diese Card enthält dann einen Platz für Titel, Beschreibung, Zeit, Kino, Fsk und Länge des Films, die im CinemaEvent gespeichert sind. Die Daten dafür kommen aus dem Controller, aus der html-Datei kann darauf mit einem Getter zugegriffen werden. Der Button um Plätze zu buchen benuzt eine hyperreference, um die gewünschte Seite (/setseat) aufzurufen.
 
 -->
