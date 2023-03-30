@@ -92,7 +92,7 @@ public class CinemaEventController {
         m5.setExternalLink("https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
 
         m6 = new Movie("Matrix 4");
-        m6.setDesc("Der langerwartete Nachfolger :)");
+        m6.setDesc("Muss man gesehen haben!");
         m6.setImgLink("https://assets.cdn.moviepilot.de/files/907722fd26722acf79b0969a472768c7c8efe900c48e0fb0b8e93fb2eb99/limit/500/1000/MV5BNTUxOTdjMDMtMWY1MC00MjkxLTgxYTMtYTM1MjU5ZTJlNTZjXkEyXkFqcGdeQXVyNTA4NzY1MzY%40._V1_SY1000_CR0%2C0%2C706%2C1000_AL_.jpg");
         m6.setFsk(16);
         m6.setLength(172);
