@@ -6,7 +6,7 @@
             <p class="card-text" th:text="${ce.movie.desc}">Keine Beschreibung gefunden...</p>
             <p class="card-text" th:text="${ce.time}">Zeit kommt noch</p>
             <p class="card-text">Kino <span th:text="${ce.cinemahall.getNumber}">??</span> (FSK <span th:text="${ce.movie.getFsk}">??</span>), <span th:text="${ce.movie.length}">??</span> Min.</p>
-            <p class="card-text" th:text="${ce.externalLink}">-</p>
+            <p class="card-text" th:text="${ce.getMovie.getExternalLink}">-</p>
             <a th:href="@{/setseat(cinemaevent=${ce.getId})}" class="btn btn-primary">Plätze buchen!</a>
         </div>
     </div>
@@ -20,7 +20,7 @@
     AUFGABE 6
 
     Alle Dateien, die geändert werden mussten:
-    - CinemaEvent.java
+    - Movie.java
     - CinemaEventController.java
     - home.html
 

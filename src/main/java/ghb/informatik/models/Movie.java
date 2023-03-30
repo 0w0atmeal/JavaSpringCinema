@@ -7,6 +7,7 @@ public class Movie {
     int length;
     String desc;
     String imgLink;
+    String externalLink;
 
     public Movie(String title){
         setTitle(title);
@@ -42,5 +43,11 @@ public class Movie {
     }
     public void setTitle(String title) {
         this.title = title;
+    }
+    public void setExternalLink(String externalLink) {
+        this.externalLink = externalLink;
+    }
+    public String getExternalLink() {
+        return externalLink;
     }
 }

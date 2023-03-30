@@ -7,7 +7,6 @@ public class CinemaEvent {
     Seat[][] seats;
     String time;
     int id;
-    String externalLink;
 
     /*   
         AUFGABE 2
@@ -16,12 +15,11 @@ public class CinemaEvent {
 
 
     */
-    public CinemaEvent(int id, Movie movie, CinemaHall cinemahall, String time, String externalLink){
+    public CinemaEvent(int id, Movie movie, CinemaHall cinemahall, String time){
         setCinemahall(cinemahall);
         setMovie(movie);
         setTime(time);
         setId(id);
-        setExternalLink(externalLink);
         setSeats(new Seat[getCinemahall().getCols()][getCinemahall().getRows()]);
 
         for(int i = 0; i < getSeats().length; i++){
@@ -61,10 +59,5 @@ public class CinemaEvent {
     public Seat[][] getSeats() {
         return seats;
     }
-    public void setExternalLink(String externalLink) {
-        this.externalLink = externalLink;
-    }
-    public String getExternalLink() {
-        return externalLink;
-    }
+    
 }
