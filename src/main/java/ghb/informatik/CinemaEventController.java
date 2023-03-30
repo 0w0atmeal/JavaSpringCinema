@@ -60,7 +60,7 @@ public class CinemaEventController {
         m1.setImgLink("https://m.media-amazon.com/images/I/51KCZ507V3L._SY445_.jpg");
         m1.setFsk(12);
         m1.setLength(116);
-        m1.setExternalLink
+        
 
         m2 = new Movie("Andor Movie");
         m2.setDesc("Andor als Film - kommt bestimmt!");
@@ -81,29 +81,29 @@ public class CinemaEventController {
         m4.setLength(178);
 
         m5 = new Movie("Platzhalter1");
-        m5.setDesc("Zeitloser Klassiker...");
+        m5.setDesc("Platzhalterbeschreibung");
         m5.setImgLink("https://assets.cdn.moviepilot.de/files/907722fd26722acf79b0969a472768c7c8efe900c48e0fb0b8e93fb2eb99/limit/500/1000/MV5BNTUxOTdjMDMtMWY1MC00MjkxLTgxYTMtYTM1MjU5ZTJlNTZjXkEyXkFqcGdeQXVyNTA4NzY1MzY%40._V1_SY1000_CR0%2C0%2C706%2C1000_AL_.jpg");
         m5.setFsk(12);
         m5.setLength(175);
 
-        m6 = new Movie("Platzhalter2");
-        m6.setDesc("Zeitloser Klassiker...");
+        m6 = new Movie("Matrix 4");
+        m6.setDesc("Der langerwartete Nachfolger :)");
         m6.setImgLink("https://assets.cdn.moviepilot.de/files/907722fd26722acf79b0969a472768c7c8efe900c48e0fb0b8e93fb2eb99/limit/500/1000/MV5BNTUxOTdjMDMtMWY1MC00MjkxLTgxYTMtYTM1MjU5ZTJlNTZjXkEyXkFqcGdeQXVyNTA4NzY1MzY%40._V1_SY1000_CR0%2C0%2C706%2C1000_AL_.jpg");
-        m6.setFsk(0);
+        m6.setFsk(16);
         m6.setLength(172);
 
         
 
-        ce1 = new CinemaEvent(0, m1, ch1, "11.10.2022, 19:00 Uhr");
-        ce2 = new CinemaEvent(1, m2, ch2, "12.10.2022, 19:30 Uhr");
-        ce3 = new CinemaEvent(2, m3, ch1, "14.10.2022, 19:30 Uhr");
-        ce4 = new CinemaEvent(3, m4, ch2, "11.10.2022, 21:30 Uhr");
-        ce5 = new CinemaEvent(4, m4, ch1, "12.10.2022, 19:00 Uhr");
-        ce6 = new CinemaEvent(5, m3, ch2, "15.10.2022, 20:30 Uhr");
-        ce7 = new CinemaEvent(6, m2, ch1, "16.10.2022, 21:15 Uhr");
-        ce8 = new CinemaEvent(7, m1, ch2, "18.10.2022, 20:30 Uhr");
-        ce9 = new CinemaEvent(8, m5, ch1,"18.12.2022, 20:30 Uhr");
-        ce10 = new CinemaEvent(9, m6, ch2,"18.12.2024, 20:31 Uhr");
+        ce1 = new CinemaEvent(0, m1, ch1, "11.10.2022, 19:00 Uhr", "https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
+        ce2 = new CinemaEvent(1, m2, ch2, "12.10.2022, 19:30 Uhr", "https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
+        ce3 = new CinemaEvent(2, m3, ch1, "14.10.2022, 19:30 Uhr", "https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
+        ce4 = new CinemaEvent(3, m4, ch2, "11.10.2022, 21:30 Uhr", "https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
+        ce5 = new CinemaEvent(4, m4, ch1, "12.10.2022, 19:00 Uhr", "https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
+        ce6 = new CinemaEvent(5, m3, ch2, "15.10.2022, 20:30 Uhr", "https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
+        ce7 = new CinemaEvent(6, m2, ch1, "16.10.2022, 21:15 Uhr", "https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
+        ce8 = new CinemaEvent(7, m1, ch2, "18.10.2022, 20:30 Uhr", "https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
+        ce9 = new CinemaEvent(8, m5, ch1,"18.12.2022, 20:30 Uhr","https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
+        ce10 = new CinemaEvent(9, m6, ch2,"18.12.2024, 20:31 Uhr", "https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung");
         
     }
 
