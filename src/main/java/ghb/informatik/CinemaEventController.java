@@ -3,6 +3,7 @@ package ghb.informatik;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.view.RedirectView;
 
@@ -45,6 +46,15 @@ public class CinemaEventController {
         model.addAttribute("cinemaEvents", cec.getAllCE());
         return "index.html";
     }
+
+    @GetMapping("/addcinemaeventprep")
+    public String addCinemaEventPrep(@RequestParam(name="activePage", required = false, defaultValue = "cinemaevent_add_prep") String activePage, Model model){
+        model.addAttribute("activePage", "personen_add_prep");
+        return "index.html";
+    }
+
+    @RequestMapping{"/addcinemaevent"}
+    public String addCinemaEvent(@RequestParam(name="MovieTitle", required = true, defaultValue = "null") String MovieTitle)
 
     /*
         AUFGABE 3
@@ -108,7 +118,7 @@ public class CinemaEventController {
         ce6 = new CinemaEvent(5, m3, ch2, "15.10.2022, 20:30 Uhr");
         ce7 = new CinemaEvent(6, m2, ch1, "16.10.2022, 21:15 Uhr");
         ce8 = new CinemaEvent(7, m1, ch2, "18.10.2022, 20:30 Uhr");
-        ce9 = new CinemaEvent(8, m5, ch1,"18.12.2022, 20:30 Uhr");
+        ce9 = new CinemaEvent(8, m5, ch1, "18.12.2022, 20:30 Uhr");
         ce10 = new CinemaEvent(9, m6, ch2,"18.12.2024, 20:31 Uhr");
         
     }
